@@ -86,3 +86,39 @@ this.panel2.Controls.Find("User2", false)[0].BringToPront();
 else
 
 this.pane12.Controls.Find("User1", false)[0].Bringtofront();
+
+// Taken: @x86000068 RID: 104 RVA: 0x00004390 File Offset: 0x00002590 
+private void Initialize()
+
+this.client = new DiscordRpcClient("883370011048173608");
+
+this.client.Logger - now ConsoleLogger
+
+Level = 3
+
+this.client. On leady + delegate(object sender, ReadyMessage e)
+
+Console.WriteLine("Received Ready from user (e)", e.User.Username);
+
+this.client.OnPresenceUpdate + delegate(object sender, PresenceMessage e)
+
+Console.WriteLine("Received Update! {0}", e. Presence);
+
+this.client. Initialize();
+this.client.SetPresence(new RichPresence
+
+Details "discord.gg/BeAB59hhZN", 
+State = "O melhor apativo de otimização do Brasil", 
+Assets = new Assets
+
+LargeImageKey = "logo",
+LargeImageText "O melhor aplicativo de otimização do Brasil",
+
+Timestamps = Timestamps.FromTimeSpan (18.8),
+Buttons new Button[]
+
+new Button
+
+Label = "Aumentar meu FPS,
+Url = "discord.gg/BeAB59hhZN"
+
